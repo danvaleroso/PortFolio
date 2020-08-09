@@ -1,0 +1,234 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+#navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: rgba(226, 238, 238, 0.4);
+    justify-content: space-between;
+    top: 0;
+}
+.upper-link {
+    display: flex;
+}
+.link {
+    padding:10px 15px;
+    background-color: none;
+    height: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.link:hover {
+    padding:10px 15px;
+    background-color: rgba(24, 26, 26, 0.4);
+    height: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#sidenavbar {
+    position: fixed;
+    height: 180px;
+    width: 50px;
+    bottom: 10%;
+    left: 10px;
+    background-color: rgba(200, 218, 218, 0.4);
+}
+#sidenavbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sidenavbar ul li {
+    padding: 20%;
+    margin: auto;
+    text-align: center;
+}
+@keyframes movement {
+    0% {padding-top:5px; padding-bottom: 5px;}
+    100% {padding-top: 0px; padding-bottom: 10px;}
+}
+.sidenavbar-img {
+    padding-top:5px; 
+    padding-bottom: 5px;
+    height: 30px;
+    width: auto;
+}
+.sidenavbar-img:hover {
+    animation-name: movement;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    height: 30px;
+    width: auto;
+}
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;    
+    align-items: center;
+    background-image: url(https://hackernoon.com/hn-images/1*dhwHUlGtrUKitcxbW65FPQ.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#introduction {
+    background-color: rgba(202, 218, 218, 0.4);
+    border: 5px solid white;
+    width: 60%;
+    text-align: center;
+}
+h1 {
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+}
+#welcome-section div {
+    padding-right: 10px;
+}
+#about {
+    height: fit-content;
+    padding-top: 20px;
+    background-color:  #9DBCBC;
+}
+#about-container {
+    
+    width: 800px;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 5px 5px 5px;
+    background-color: transparent;
+    height: inherit;
+}
+#about-info {
+    width: 65%;
+    text-align: justify;
+}
+#about-resume {
+    padding: 30px;
+    text-align: center;
+}
+#link-resume {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#link-resume:hover {
+    padding: 5px;
+    color: blanchedalmond;
+}
+#id-photo {
+    float: right;
+    padding: 15px;
+    margin-top: 20px;
+}
+#id-photo img{
+    width:150px;
+    height: auto;
+    border-radius: 50%;
+}
+#projects {
+    padding: 1%;
+    height: fit-content;
+    text-align: center;
+    background-color:  #79879c;
+}
+.projects-title {
+    font-size: 45px;
+    color: blanchedalmond;
+}
+#project-grid {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin: auto;
+}
+.project-tile {
+    height: 420px;
+    width: 400px;
+    min-width: 80%;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.project-tile:hover {
+    height: 420px;
+    width: 400px;
+    min-width: 80%;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: underline;
+    color: white;
+    background-color: rgba(88, 88, 80, 0.555);
+}
+.project-img-container {
+    height: 380px;
+    min-height: auto;
+    width: inherit;
+}
+.project-img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+#contact {
+    height: fit-content;
+    text-align: center;
+    padding: 10%;
+    background-color:  #6d685f;
+    margin: 0;
+    color: rgb(245, 230, 230);
+}
+#contact-header {
+    font-size: 55px;
+}
+footer {
+    border-top: rgb(148, 33, 33) solid 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #6d685f;
+    height: fit-content;
+    color:  rgb(245, 230, 230);
+}
+
+@media (max-width: 900px){
+    #welcome-text {
+        font-size: 50px;
+    }
+    #project-grid {
+        display: grid;
+        width: fit-content;
+        height: fit-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: auto;
+    }
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        max-width: 80%;
+        margin: auto;
+        padding: 20px 5px 5px 5px;
+        background-color: transparent;
+        height: inherit;
+        text-align: center;
+    }
+    #about-info {
+        width: 100%;
+        text-align: justify;
+    }
+    #id-photo {
+        margin: auto;
+    }
+}
